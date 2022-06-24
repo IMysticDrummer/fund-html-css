@@ -1,0 +1,21 @@
+/*Navegación*/
+
+.enlace_nav{
+  list-style: none;
+}
+
+/*Header*/
+
+.img_logo{
+  height: 6em;
+}
+
+/*Footer y redes sociales*/
+.enlace_rrss, .enlace_rrss>li {
+  list-style: none;
+  display: inline;
+  padding: 1em;
+}
+.enlace_rrss img {
+  height: 2em;
+}

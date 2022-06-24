@@ -1,0 +1,34 @@
+:root{
+  /*Paleta*/
+  --dark-sienna: #2c0400ff;
+  --xiketic: #1e0200ff;
+  --orange-yellow: #f6bb24ff;
+  --windsor-tan: #b35b0bff;
+  --black: #020000ff;
+  --rosso-corsa: #c72805ff;
+  --selective-yellow: #f5b207ff;
+
+  --fondo: #020000ff;
+  --caracter: #f6bb24ff;
+  --enlace: #b35b0bff;
+  --enlace_visitado: #c72805ff;
+  --enlace_resaltado: #f5b207ff;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--caracter);
+}
+
+a {
+  text-decoration: none;
+  color: var(--enlace);
+}
+
+a:hover{
+  color: var(--enlace_resaltado);
+}
+
+a:visited {
+  color: var(--enlace_visitado);
+}
