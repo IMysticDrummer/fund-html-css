@@ -8,7 +8,7 @@
 </head>
 <body>
   <nav>
-    <div>IMysticDrummer</div>
+    <h1>Iván García Rodríguez - IMysticDrummer</h1>
     <ul>
       <li><a href="#carrousel">Carrousel</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -19,9 +19,9 @@
   </nav>
   
   <header>
-    <h1>Iván García Rodríguez - IMysticDrummer</h1>
+    <img src="../img/depositphotos_88146566-stock-illustration-fire-burning-phoenix-bird-with.jpg" alt="Imagen Fénix">
+    
     <p>Programador Web Full Stack</p>
-    <img src="" alt="">
   </header>
 
   <main>
@@ -35,31 +35,64 @@
       
       <p>Crear los skills con barras de progreso animadas por css</p>
     </section>
+
     <section id="contact">
       <h1>Formulario Contacto</h1>
+      
+      <form action="#" method="get">
+        <div>
+          <label for="nombre">Nombre *</label>
+          <input type="text" name="nombre" id="nombre" required>
+          <label for="apellidos">Apellidos *</label>
+          <input type="text" name="apellidos" id="apellidos" required>
+        </div>
 
-      <p>Crear formulario con</p>
-      <ul>
-        <li>Nombre obligatorio</li>
-        <li>Apellidos obligatorio</li>
-        <li>Teléfono obligatorio</li>
-        <li>Radiobutton ¿cómo me conociste?
-          <ul>
-            <li>Universidad</li>
-            <li>Keepcoding</li>
-            <li>Colegio</li>
-            <li>Github</li>
-          </ul>
-        </li>
-        <li>Tag de github (usar regexp para validación -@username)</li>
-        <li>Descripción obligatorio max 180 caracteres</li>
-        <li>Botón de guardado</li>
-      </ul>
+        <div>
+          <label for="email">Email *</label>
+          <input type="email" name="email" id="email" required>
+          <label for="telefono">Teléfono *</label>
+          <input type="number" name="telefono" id="telefono" required>
+        </div>
+        
+        <fieldset>
+          <legend>¿Cómo me conociste?</legend>
+          <div>
+            <label for="rb_universidad">Universidad</label>
+            <input type="radio" name="conocido" id="rb_universidad" value="universidad">
+          </div>
+          <div>
+            <label for="rb_keepcoding">Keepcoding Kick-off</label>
+            <input type="radio" name="conocido" id="rb_keepcoding" value="keepcoding">
+          </div>
+          <div>
+            <label for="rb_colegio">Colegio</label>
+            <input type="radio" name="conocido" id="rb_colegio" value="colegio">
+          </div>
+          <div>
+            <label for="rb_github">GitHub</label>
+            <input type="radio" name="conocido" id="rb_github" value="GitHub">
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="tag">Tag de Github</label>
+          <input type="text" name="tag" id="tag" placeholder="Formato @username" pattern="@[0-z]+">
+        </div>
+        
+        <div>
+          <label for="descripcion">Descripción *</label>
+          <input type="text" name="descripcion" id="descripcion" placeholder="180 car. max." required maxlength="180">
+        </div>
+
+        <input type="submit" value="Enviar">
+      </form>
     </section>
+
     <section id="works">
       <h1>Works</h1>
       <p>Crear página de detalle de nuestros trabajos, utilizando css grid</p>
     </section>
+
   </main>
 
   <footer>
