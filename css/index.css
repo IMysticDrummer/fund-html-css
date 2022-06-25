@@ -4,6 +4,8 @@ header{
   position: fixed;
   left: var(--padding_basico);
   right: var(--padding_basico);
+  top: 0;
+  padding: 2%;
   background-color: var(--fondo);
   z-index: 100;
   height: var(--altura_logo);
@@ -97,6 +99,7 @@ header{
     .menu a{
       display: inline-block;
       text-decoration: none;
+      font-size: 1.2em;
     }
 
 
@@ -117,6 +120,33 @@ main {
   margin-bottom: var(--altura_logo);
 }
 
+  /*Formulario*/
+  .form_Label{
+    display: none;
+  }
+
+
+form input[type="text"], form input[type="email"], form input[type="tel"] {
+  background-color: var(--fondo_menu);
+  border-color: var(--enlace_resaltado);
+  border-radius: 8px;
+}
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="tel"]::placeholder {
+  color: var(--enlace_resaltado);
+}
+form input[type="submit"] {
+  background-color: var(--fondo_menu);
+  color: var(--enlace_resaltado);
+  border-color: var(--enlace_visitado);
+  border-radius: 8px;
+}
+form input[type="submit"]:hover {
+  background-color: var(--enlace_resaltado);
+  color: var(--fondo_menu);
+  border-color: var(--enlace_visitado);
+}
 
 /*Footer y redes sociales*/
 

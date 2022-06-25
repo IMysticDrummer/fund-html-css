@@ -9,7 +9,7 @@
   <title>IMysticDrummer Portfolio</title>
 </head>
 <body>
-  
+
   <header>
     <aside class="menu">
       <input type="checkbox" name="" id="">
@@ -46,17 +46,17 @@
       
       <form action="#" method="get">
         <div>
-          <label for="nombre">Nombre *</label>
-          <input type="text" name="nombre" id="nombre" required>
-          <label for="apellidos">Apellidos *</label>
-          <input type="text" name="apellidos" id="apellidos" required>
+          <label class="form_Label" for="nombre">Nombre *</label>
+          <input type="text" name="nombre" id="nombre" required placeholder="Nombre*">
+          <label class="form_Label" for="apellidos">Apellidos *</label>
+          <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos*">
         </div>
 
         <div>
-          <label for="email">Email *</label>
-          <input type="email" name="email" id="email" required>
-          <label for="telefono">Teléfono *</label>
-          <input type="number" name="telefono" id="telefono" required>
+          <label class="form_Label" for="email">Email *</label>
+          <input type="email" name="email" id="email" required placeholder="Email*">
+          <label class="form_Label" for="telefono">Teléfono *</label>
+          <input type="tel" name="telefono" id="telefono" required placeholder="Teléfono*">
         </div>
         
         <fieldset>
@@ -80,13 +80,13 @@
         </fieldset>
 
         <div>
-          <label for="tag">Tag de Github</label>
-          <input type="text" name="tag" id="tag" placeholder="Formato @username" pattern="@[0-z]+">
+          <label class="form_Label" for="tag">Tag de Github</label>
+          <input type="text" name="tag" id="tag" placeholder="Tag Github. Formato @username" pattern="@[0-z]+">
         </div>
         
         <div>
-          <label for="descripcion">Descripción *</label>
-          <input type="text" name="descripcion" id="descripcion" placeholder="180 car. max." required maxlength="180">
+          <label class="form_Label" for="descripcion">Descripción *</label>
+          <input type="text" name="descripcion" id="descripcion" placeholder="Descripción =. 180 car. max." required maxlength="180">
         </div>
 
         <input type="submit" value="Enviar">
