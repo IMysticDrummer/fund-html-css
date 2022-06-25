@@ -1,13 +1,72 @@
 /*Navegación*/
+.menu input[type="checkbox"], .menu img{
+  position: absolute;
+  margin: 0;
+  padding: 0 ;
+  top: 0;
+  left: 0;
+  height: var(--altura_menu);
+  width: var(--altura_menu);
+  padding: var(--padding_basico);
+}
 
-.enlace_nav{
+.menu input[type="checkbox"]{
+  opacity: 0;
+}
+
+.menu img {
+  pointer-events: none;
+}
+
+.menu nav {
+  left: var(--altura_menu);
+  position: relative;
+  margin-left: 2%;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: var(--fondo_menu);
   list-style: none;
 }
 
+.menu input:checked ~ nav{
+  display: block;
+}
+
+.menu input:not(:checked) ~ nav{
+  display: none;
+}
+
+.menu a{
+  display: block;
+  text-decoration: none;
+}
+
 /*Header*/
+header, main, footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: var(--altura_menu);
+  margin: 0;
+  align-items: center;
+}
 
 .img_logo{
-  height: 6em;
+  height: var(--altura_logo);
+  display: inline-block;
+}
+
+header h1 {
+  position:absolute;
+  top:0;
+  display: inline-block;
+  height: var(--altura_logo);
+  margin: 0% 0% 0% 1%;
+  font-size: 1.5em;
 }
 
 /*Footer y redes sociales*/

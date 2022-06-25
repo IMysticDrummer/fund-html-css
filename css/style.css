@@ -9,15 +9,23 @@
   --selective-yellow: #f5b207ff;
 
   --fondo: #020000ff;
+  --fondo_menu: #2c0400ff;
   --caracter: #f6bb24ff;
   --enlace: #b35b0bff;
   --enlace_visitado: #c72805ff;
   --enlace_resaltado: #f5b207ff;
+  --altura_menu: 3em;
+  --padding_basico: 8px;
+  --altura_logo: 6em;
 }
 
 body {
+  box-sizing: border-box;
   background-color: var(--fondo);
   color: var(--caracter);
+  margin: 0px;
+  padding: var(--padding_basico);
+  position: absolute;
 }
 
 a {
