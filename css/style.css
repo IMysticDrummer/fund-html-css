@@ -14,13 +14,16 @@
   --enlace: #b35b0bff;
   --enlace_visitado: #c72805ff;
   --enlace_resaltado: #f5b207ff;
-  --altura_menu: 3em;
+  --altura_menu: 2em; /*3em*/
   --padding_basico: 8px;
-  --altura_logo: 6em;
+  --altura_logo: 4em; /*6em*/
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   background-color: var(--fondo);
   color: var(--caracter);
   margin: 0px;
@@ -33,10 +36,10 @@ a {
   color: var(--enlace);
 }
 
-a:hover{
-  color: var(--enlace_resaltado);
-}
-
 a:visited {
   color: var(--enlace_visitado);
+}
+
+a:hover {
+  color: var(--enlace_resaltado);
 }
