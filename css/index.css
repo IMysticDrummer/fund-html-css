@@ -1,7 +1,10 @@
 /*Header*/
 
 header{
-  position: fixed;
+  position:-webkit-sticky;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
   left: var(--padding_basico);
   right: var(--padding_basico);
   top: 0;
@@ -14,6 +17,7 @@ header{
 
   .img_logo{
     position: relative;
+    display: block;
     left: var(--altura_menu);
     height: var(--altura_logo);
   }
@@ -120,33 +124,44 @@ main {
   margin-bottom: var(--altura_logo);
 }
 
+.contenedor1{
+  border: 2px solid;
+  border-color: aqua;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.contenedor1 p{
+  border: 1px solid;
+  border-color: red;
+}
+
   /*Formulario*/
   .form_Label{
     display: none;
   }
 
-
-form input[type="text"], form input[type="email"], form input[type="tel"] {
-  background-color: var(--fondo_menu);
-  border-color: var(--enlace_resaltado);
-  border-radius: 8px;
-}
-form input[type="text"]::placeholder,
-form input[type="email"]::placeholder,
-form input[type="tel"]::placeholder {
-  color: var(--enlace_resaltado);
-}
-form input[type="submit"] {
-  background-color: var(--fondo_menu);
-  color: var(--enlace_resaltado);
-  border-color: var(--enlace_visitado);
-  border-radius: 8px;
-}
-form input[type="submit"]:hover {
-  background-color: var(--enlace_resaltado);
-  color: var(--fondo_menu);
-  border-color: var(--enlace_visitado);
-}
+  form input[type="text"], form input[type="email"], form input[type="tel"] {
+    background-color: var(--fondo_menu);
+    border-color: var(--enlace_resaltado);
+    border-radius: 8px;
+  }
+  form input[type="text"]::placeholder,
+  form input[type="email"]::placeholder,
+  form input[type="tel"]::placeholder {
+    color: var(--enlace_resaltado);
+  }
+  form input[type="submit"] {
+    background-color: var(--fondo_menu);
+    color: var(--enlace_resaltado);
+    border-color: var(--enlace_visitado);
+    border-radius: 8px;
+  }
+  form input[type="submit"]:hover {
+    background-color: var(--enlace_resaltado);
+    color: var(--fondo_menu);
+    border-color: var(--enlace_visitado);
+  }
 
 /*Footer y redes sociales*/
 
