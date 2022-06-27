@@ -17,6 +17,7 @@
   --altura_menu: 2em; /*3em*/
   --padding_basico: 8px;
   --altura_logo: 4em; /*6em*/
+  --altura_header: 5em;
 }
 
 * {
