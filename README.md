@@ -1,7 +1,7 @@
 # FUNDAMENTOS HTML-CSS
 ## PRÁCTICA WEB PORTFOLIO
 
-**Autor:** Iván García Rodríguez (IMysticDrummer)
+**Autor:** Iván García Rodríguez (*IMysticDrummer*)
 
 ## IMysticDrummer (Iván García Rodríguez)
 
@@ -14,7 +14,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 > **Barra de navegación**.
 >> Acceso a las secciones internas y al enlace a la página de trabajos.
 
-> **Header** con imagen de fondo, mi nombre, y el *nick/nombre de marca*.
+> **Header** con imagen de fondo, mi nombre, y el *nick - nombre de marca*.
 
 > **Sección** con carrousel de imágenes
 > **Sección** con el estado de las habilidades adquiridas
