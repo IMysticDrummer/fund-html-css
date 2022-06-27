@@ -28,7 +28,9 @@ body {
   color: var(--caracter);
   margin: 0px;
   padding: var(--padding_basico);
-  position: absolute;
+  /*position: absolute;*/
+  display: flex;
+  flex-direction: column;
 }
 
 a {

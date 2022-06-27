@@ -84,15 +84,24 @@
             <input type="radio" name="conocido" id="rb_github" value="GitHub">
           </div>
         </fieldset>
-
+        
+        <!-- Otro patrón posible @[0-z]+ -->
         <div>
           <label class="form_Label" for="tag">Tag de Github</label>
-          <input type="text" name="tag" id="tag" placeholder="Tag Github. Formato @username" pattern="@[0-z]+">
+          <input type="text" name="tag" id="tag"
+          placeholder="Tag Github. Formato @username" pattern="^@[^\s]+"
+          title="ejemplo: @keepcoding">
         </div>
         
         <div>
           <label class="form_Label" for="descripcion">Descripción *</label>
-          <input type="text" name="descripcion" id="descripcion" placeholder="Descripción =. 180 car. max." required maxlength="180">
+          <textarea
+            name="descripcion"
+            id="descripcion"
+            cols="30"
+            rows="10"
+            placeholder="Descripción =. 180 car. max."
+            required maxlength="180"></textarea>
         </div>
 
         <input type="submit" value="Enviar">

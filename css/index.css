@@ -3,47 +3,51 @@
 header{
   position:-webkit-sticky;
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  left: var(--padding_basico);
-  right: var(--padding_basico);
-  top: 0;
-  padding: 2%;
+  width: 100%;
   background-color: var(--fondo);
   z-index: 100;
   height: var(--altura_logo);
+  border: 3px solid green;
+  flex-wrap: wrap;
 }
-
 
   .img_logo{
     position: relative;
     display: block;
     left: var(--altura_menu);
-    height: var(--altura_logo);
+    /*height: var(--altura_logo);*/
+    height: 100%;
+    margin-left: 5px;
+    border: 1px solid orange
   }
 
   .header_h1 {
     position: relative;
-    float: right;
     font-size: 1em;
-    width: 200px;
-    right: 0;
-    margin:0;
+    margin:0 0 0 var(--altura_menu);
     text-align: center;
+    padding: 5px;
+    border: 1px solid yellow;
+    flex: 1 0 auto;
+    height: 48%;
   }
 
   header p {
     position: relative;
-    float: right;
     margin: 0;
-    height: 1em;
-    top: -2em;
+    padding: 5px;
+    border: 1px solid blue;
+    flex: 1 0 auto;
+    height: 48%;
   }
 
   /*Navegación*/
   .menu {
     position: absolute;
-    display: inline-block;
+    /*display: inline-block;*/
     z-index: 100;
     background-color: var(--fondo);
     height: var(--altura_menu);
@@ -69,7 +73,6 @@ header{
     .menu img {
       pointer-events: none;
     }
-
 
     .menu nav {
       left: var(--altura_menu);
@@ -120,8 +123,6 @@ header{
 main {
   position:relative;
   right: 0;
-  margin-top: var(--altura_logo);
-  margin-bottom: var(--altura_logo);
 }
 
 .contenedor1{
@@ -141,14 +142,18 @@ main {
     display: none;
   }
 
-  form input[type="text"], form input[type="email"], form input[type="tel"] {
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
     background-color: var(--fondo_menu);
     border-color: var(--enlace_resaltado);
     border-radius: 8px;
   }
   form input[type="text"]::placeholder,
   form input[type="email"]::placeholder,
-  form input[type="tel"]::placeholder {
+  form input[type="tel"]::placeholder,
+  form textarea::placeholder {
     color: var(--enlace_resaltado);
   }
   form input[type="submit"] {
