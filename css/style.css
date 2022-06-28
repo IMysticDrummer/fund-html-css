@@ -29,7 +29,6 @@ body {
   color: var(--caracter);
   margin: 0px;
   padding: var(--padding_basico);
-  /*position: absolute;*/
   display: flex;
   flex-direction: column;
 }
@@ -45,4 +44,12 @@ a:visited {
 
 a:hover {
   color: var(--enlace_resaltado);
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+em {
+  font-style: italic;
 }

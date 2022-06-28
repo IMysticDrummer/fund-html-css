@@ -15,36 +15,39 @@ header{
   .img_logo{
     position: relative;
     display: block;
+    order: 1;
     left: var(--altura_menu);
     height: 100%;
     margin-left: 5px;
+    border-radius: 50%;
   }
 
   .titulo {
     position: relative;
-    flex: 1 0 auto;
-    width: 40%;
-    margin-left: var(--altura_menu);
     display: flex;
     flex-direction: column;
     align-items: center;
+    order: 2;
+    flex: 1 0 auto;
+    width: 40%;
+    margin-left: var(--altura_menu);
+    
   }
 
-  .header_h1 {
-    position: relative;
-    font-size: 1em;
-    margin:0;
-    text-align: center;
-    flex: 1 0 auto;
-    padding: 5px;
-  }
+    .header_h1 {
+      position: relative;
+      font-size: 1em;
+      margin:0;
+      text-align: center;
+      padding: 5px;
+    }
 
-  header p {
-    position: relative;
-    font-size: 0.75em;
-    margin: 0;
-    flex: 1 0 auto;
-  }
+    header p {
+      position: relative;
+      font-size: 0.75em;
+      margin: 0;
+      flex: 1 0 auto;
+    }
 
   /*Navegación*/
   .menu {
@@ -110,3 +113,56 @@ header{
       text-decoration: none;
       font-size: 1.2em;
     }
+
+
+
+  @media only screen and (min-width:600px){
+    header{
+      height: 300px;
+      flex-direction: column;
+    }
+
+    .titulo {
+      order: 1;
+      width: 100%;
+      margin:0;
+    }
+    .titulo h1{
+      font-size: 1.5em;
+    }
+    .titulo p{
+      font-size: 1em;
+    }
+
+    .img_logo {
+      order: 3;
+      height: 200px;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .menu {
+      position: relative;
+      width: 100%;
+      order: 2;
+    }
+
+    .menu input[type="checkbox"], .menu img {
+      display: none;
+    }
+
+    .menu input:not(:checked) ~ nav {
+      display: inline-block;
+      left: 0;
+      padding: 0;
+      width: 100%;
+    }
+    
+    .menu nav {
+      width: 100%;
+    }
+    .menu > nav > ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
