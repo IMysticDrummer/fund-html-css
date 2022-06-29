@@ -30,8 +30,12 @@
     </aside>
 
     <div class="img_logo">
-    <img src="../img/logo_868x1024.jpg" alt="Imagen Fénix">
-  </div>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="../img/logo_868x1024.jpg">
+        <source media="(min-width: 600px)" srcset="../img/logo_542x640.jpg">
+        <img src="../img/logo_68x80.jpg" alt="Imagen Fénix">
+      </picture>
+    </div>
     <div class="titulo">
       <h1 class="header_h1">Iván García Rodríguez - IMysticDrummer</h1>
       <em>Programador Web Full Stack</em>
