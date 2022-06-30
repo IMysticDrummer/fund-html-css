@@ -1,0 +1,44 @@
+main{
+  max-width: 1024px;
+  margin: auto;
+}
+
+main>section {
+  padding-top: var(--altura_header);
+}
+
+
+/*Carousel*/
+.cont-carousel {
+  width: 100%;
+}
+
+.cont-slides {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 40vh;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  padding-top: var(--altura_header);
+}
+
+.cont-links{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-links{
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: var(--enlace);
+  border-radius: 50%;
+  margin: 10px;
+}

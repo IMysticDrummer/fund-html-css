@@ -4,7 +4,7 @@ header{
   top: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   background-color: var(--fondo);
   z-index: 100;
   height: var(--altura_header);
@@ -118,9 +118,9 @@ header{
 
 
 
-  @media only screen and (min-width:600px){
+  @media only screen and (min-width:768px){
     header{
-      height: 300px;
+      height: 30vh;
       flex-direction: column;
     }
 
@@ -137,8 +137,8 @@ header{
     }
 
     .img_logo {
-      order: 3;
-      height: 200px;
+      order: 1;
+      height: 30vh;
       align-self: center;
       justify-self: center;
     }

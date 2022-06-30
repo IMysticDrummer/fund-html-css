@@ -12,16 +12,17 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-  <header>
+  <header class="padding_basico">
     <aside class="menu">
       <input type="checkbox" name="" id="">
       <img src="../img/menu-hamburger.png" alt="">
       <nav>
         <ul class="enlace_nav">
-          <li><a href="#carrousel">Carrousel</a></li>
+          <li><a href="#proyects">Proyectos</a></li>
           <li></div><a href="#skills">Skills</a></li>
           <li></div><a href="#contact">Contact</a></li>
           <li></div><a href="#works">Works</a></li>
@@ -32,7 +33,7 @@
     <div class="img_logo">
       <picture>
         <source media="(min-width: 1024px)" srcset="../img/logo_868x1024.jpg">
-        <source media="(min-width: 600px)" srcset="../img/logo_542x640.jpg">
+        <source media="(min-width: 768px)" srcset="../img/logo_542x640.jpg">
         <img src="../img/logo_68x80.jpg" alt="Imagen Fénix">
       </picture>
     </div>
@@ -42,11 +43,26 @@
     </div>
   </header>
 
-  <main>
-    <section id="carrousel">
-      <h1>Carrousel</h1>
+  <main class="padding_basico">
+    <section id="proyects">
+      <h1>Proyectos</h1>
 
-      <p>Crear un carrousel con fotos de proyectos</p>
+      <p>Aquí alguno de nuestros principales proyectos</p>
+
+      <div class="cont-carousel">
+        <div class="cont-slides">
+          <div id="slide1" class="slide">Slide1</div>
+          <div id="slide2" class="slide">Slide2</div>
+          <div id="slide3" class="slide">Slide3</div>
+          <div id="slide4" class="slide">Slide4</div>
+        </div>
+        <div class="cont-links">
+          <a href="#slide1" class="carousel-links"></a>
+          <a href="#slide2" class="carousel-links"></a>
+          <a href="#slide3" class="carousel-links"></a>
+          <a href="#slide4" class="carousel-links"></a>
+        </div>
+      </div>
     </section>
     <section id="skills">
       <h1>Skills</h1>
@@ -126,7 +142,7 @@
 
   </main>
 
-  <footer>
+  <footer class="padding_basico">
     <aside>
       <h3>Redes Sociales</h3>
       <ul class="enlace_rrss">
