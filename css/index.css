@@ -1,16 +1,4 @@
-/*header, main, footer {
-  position: relative;
-  right: 0;
-  top: var(--altura_menu);
-  margin: 0;
-  align-items: center;
-}
-
 /*MAIN*/
-main {
-  position:relative;
-  right: 0;
-}
 
 .contenedor1{
   border: 2px solid;

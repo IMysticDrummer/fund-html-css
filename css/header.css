@@ -2,7 +2,7 @@ header{
   position:-webkit-sticky;
   position: sticky;
   top: 0;
-  width: var(--anchura_header);
+  /*width: var(--anchura_header);*/
   min-width: var(--anchura_min_header);
   height: var(--altura_header);
   min-height: var(--altura_min_header);
@@ -19,7 +19,7 @@ header{
     display: block;
     order: 1;
     left: var(--altura_menu);
-    height: 100%;
+    height: 85%;
     margin-left: 5px;
     border-radius: 50%;
   }
@@ -32,41 +32,37 @@ header{
     flex-direction: column;
     align-items: center;
     order: 2;
-    width: 65%;
-    /*margin-left: var(--altura_menu);*/
-    
+    width: 65%;    
   }
 
     .header_h1 {
       position: relative;
-      font-size: 1em;
+      font-size: 1rem;
       margin:0;
       text-align: center;
       padding: 5px;
     }
 
 
-    header p {
+    .titulo em {
       position: relative;
-      font-size: 0.75em;
+      font-size: 0.70rem;
       margin: 0;
-      flex: 1 0 auto;
     }
 
   /*Navegación*/
   .menu {
     position: absolute;
     z-index: 100;
-    /*background-color: var(--fondo);*/
     height: var(--altura_menu);
     width: var(--altura_menu);
   }
   
-    .max-height-header {
+    .max-dimensions-menu {
       max-width: var(--altura_menu_max);
       max-height: var(--altura_menu_max);
     }
-    .min-height-header {
+    .min-dimensions-menu {
       min-width: var(--altura_menu_min);
       min-height: var(--altura_menu_min);
     }
@@ -97,20 +93,20 @@ header{
       position: relative;
       z-index: 100;
       padding-left: 10%;
-      width: 5em;
+      width: 7rem;
       background-color: var(--fondo_menu);
     }
 
     .menu ul{
-      margin: 0;
-      padding: 0;
+      padding: 5px;
       position: relative;
-      background-color: var(--fondo_menu);
       list-style: none;
+      display: flex;
+      flex-direction: column;
     }
 
     .menu li{
-      margin-bottom: 5px;
+      padding: 30px 0;
     }
 
     .menu input:checked ~ nav{
@@ -124,58 +120,113 @@ header{
     .menu a{
       display: inline-block;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
 
+  @media only screen and (min-width:425px){
+    .img_logo{
+      height: 80%;
+    }
+    
+    .header_h1{
+      font-size: 1.2rem;
+    }
+    
+    .titulo em{
+      font-size: 1rem;
+    }
+  }
 
+  @media only screen and (min-width:640px){  
+    :root{
+      --altura_header: 15vw;
+    }
+    
+    .titulo{
+      width: 75%;
+    }
 
+    .header_h1{
+      font-size: 1.5rem;
+    }
+    
+    .titulo em{
+      font-size: 1.2rem;
+    }
+  }
+  
   @media only screen and (min-width:768px){
+    :root{
+      --altura_header: 20vw;
+    }
     header{
-      height: 30vh;
-      flex-direction: column;
+      flex-direction: row;
+      align-content: center;
+    }
+    
+    .img_logo {
+      position: relative;
+      left: 0;
+      order: 1;
+      height: 80%;
+      margin: 0;
     }
 
     .titulo {
-      order: 1;
-      width: 100%;
+      order: 2;
       margin:0;
+      width: 80%;
     }
-    .titulo h1{
-      font-size: 1.5em;
+    .header_h1{
+      font-size: 2rem;
     }
-    .titulo p{
-      font-size: 1em;
+    .titulo em{
+      font-size: 1.5rem;
     }
 
-    .img_logo {
-      order: 1;
-      height: 30vh;
-      align-self: center;
-      justify-self: center;
-    }
 
     .menu {
       position: relative;
+      width: 75%;
+      order: 3;
+      min-width: auto;
+      min-height: auto;
+      max-width: none;
+      margin-left: auto;
+    }
+
+    .menu nav {
       width: 100%;
-      order: 2;
     }
 
     .menu input[type="checkbox"], .menu img {
       display: none;
     }
 
-    .menu input:not(:checked) ~ nav {
+    .menu input:not(:checked) ~ nav, .menu input:checked ~ nav {
       display: inline-block;
       left: 0;
       padding: 0;
-      width: 100%;
     }
     
-    .menu nav {
-      width: 100%;
-    }
     .menu > nav > ul {
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
+    }
+    .menu li {
+      padding: 0;
+    }
+  }
+
+  @media only screen and (min-width:1024px) {
+    :root{
+      --altura_header: 15vw;
+    }
+    .header_h1{
+      font-size: 2.3rem;
+    }
+    .titulo em{
+      font-size: 1.8rem;
     }
   }
