@@ -2,13 +2,15 @@ header{
   position:-webkit-sticky;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  background-color: var(--fondo);
-  z-index: 100;
+  width: var(--anchura_header);
+  min-width: var(--anchura_min_header);
   height: var(--altura_header);
+  min-height: var(--altura_min_header);
+  background-color: var(--fondo);
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 100;
   align-items: center;
 }
 
@@ -55,10 +57,19 @@ header{
   .menu {
     position: absolute;
     z-index: 100;
-    background-color: var(--fondo);
+    /*background-color: var(--fondo);*/
     height: var(--altura_menu);
     width: var(--altura_menu);
   }
+  
+    .max-height-header {
+      max-width: var(--altura_menu_max);
+      max-height: var(--altura_menu_max);
+    }
+    .min-height-header {
+      min-width: var(--altura_menu_min);
+      min-height: var(--altura_menu_min);
+    }
 
     /*Menu hamburger*/
     /*Posición general de la imagen hamburger*/

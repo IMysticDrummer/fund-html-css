@@ -14,10 +14,20 @@
   --enlace: #b35b0bff;
   --enlace_visitado: #c72805ff;
   --enlace_resaltado: #f5b207ff;
-  --altura_menu: 2rem; /*3em*/
+
+  /*Variables principales*/
   --padding_basico: 8px;
-  --altura_logo: 4rem; /*6em*/
-  --altura_header: 5rem;
+
+    /*Header*/
+    --altura_header: 25vw; /*5rem;*/
+    --altura_min_header: 76px;
+    --anchura_header: 100vw;
+    --anchura_min_header: 306px;
+    --altura_menu: 10vw; /*2rem 3em*/
+    --altura_menu_min: 30px;
+    --altura_menu_max: 40px;
+    --altura_logo: 4rem; /*6em*/
+    
 }
 
 * {
@@ -28,6 +38,7 @@ body {
   background-color: var(--fondo);
   color: var(--caracter);
   margin: 0px;
+  padding: 0 var(--padding_basico) var(--padding_basico) var(--padding_basico);
   display: flex;
   flex-direction: column;
 }
