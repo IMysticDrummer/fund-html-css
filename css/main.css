@@ -47,7 +47,136 @@ main{
   margin: 10px;
 }
 
+/*Skills*/
+.all-skills-cont{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-cont{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.skill-cont em {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.skill{
+  border: 1px solid var(--enlace_resaltado);
+  width: 50%;
+  height: 1rem;
+}
+
+@keyframes git-complet {
+  0% {width: 0%;}
+  100% {
+    width: 95%;
+  }
+}
+.git-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: git-complet 3s ease-in 1s 1 normal forwards;
+}
+@keyframes html-complet {
+  0% {width: 0%;}
+  100% {
+    width: 90%;
+  }
+}
+.html-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: html-complet 3s ease-in 4s 1 normal forwards;
+}
+@keyframes css-complet {
+  0% {width: 0%;}
+  100% {
+    width: 95%;
+  }
+}
+.css-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: css-complet 3s ease-in 7s 1 normal forwards;
+}
+@keyframes js-complet {
+  0% {width: 0%;}
+  100% {
+    width: 60%;
+  }
+}
+.js-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: js-complet 3s ease-in 10s 1 normal forwards;
+}
+@keyframes mysql-complet {
+  0% {width: 0%;}
+  100% {
+    width: 95%;
+  }
+}
+.mysql-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: mysql-complet 3s ease-in 13s 1 normal forwards;
+}
+@keyframes mongo-complet {
+  0% {width: 0%;}
+  100% {
+    width: 70%;
+  }
+}
+.mongo-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: mongo-complet 3s ease-in 16s 1 normal forwards;
+}
+@keyframes node-complet {
+  0% {width: 0%;}
+  100% {
+    width: 20%;
+  }
+}
+.node-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: node-complet 3s ease-in 19s 1 normal forwards;
+}
+@keyframes react-complet {
+  0% {width: 0%;}
+  100% {
+    width: 30%;
+  }
+}
+.react-complet{
+  height: 100%;
+  width: 0%;
+  background-color: var(--enlace);
+  animation: react-complet 3s ease-in 22s 1 alternate forwards;
+}
+
+@media only screen and (min-width:640px) {
+  /*Skills*/
+  .all-skills-cont {
+    flex-direction: row;
+  }
+}
+
 @media only screen and (min-width:768px) {
+  /*Carousel*/
   .cont-slides {
     height: 80vh;
   }
