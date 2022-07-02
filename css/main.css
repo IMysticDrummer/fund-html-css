@@ -4,10 +4,14 @@ main{
   margin: auto;
 }
 
-main>section {
-  padding-top: var(--altura_header);
+.separator {
+  display: block;
+  height: var(--altura_header);
+  width: 100%;
 }
-
+.separator > .cont-links {
+  padding: 15%;
+}
 
 /*Carousel*/
 .cont-carousel {
@@ -21,13 +25,12 @@ main>section {
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
 }
 
 .slide {
   width: 100%;
   height: 100%;
-  padding-top: var(--altura_header);
 }
 
 .cont-links{
@@ -42,4 +45,10 @@ main>section {
   background-color: var(--enlace);
   border-radius: 50%;
   margin: 10px;
+}
+
+@media only screen and (min-width:768px) {
+  .cont-slides {
+    height: 80vh;
+  }
 }
