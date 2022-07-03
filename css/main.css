@@ -4,6 +4,10 @@ main{
   margin: auto;
 }
 
+section{
+  margin-bottom: 10px;
+}
+
 .separator {
   display: block;
   height: var(--altura_header);

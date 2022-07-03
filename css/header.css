@@ -196,6 +196,7 @@ header{
     }
 
     .menu nav {
+      --fondo_menu:#2c040088;
       width: 100%;
     }
 
@@ -203,7 +204,8 @@ header{
       display: none;
     }
 
-    .menu input:not(:checked) ~ nav, .menu input:checked ~ nav {
+    .menu input:not(:checked) ~ nav,
+    .menu input:checked ~ nav {
       display: inline-block;
       left: 0;
       padding: 0;
