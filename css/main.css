@@ -173,11 +173,27 @@ main{
   .all-skills-cont {
     flex-direction: row;
   }
+  .skill-cont{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 48%;
+    align-items: baseline;
+  }
+  .skill-cont em {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width:768px) {
   /*Carousel*/
   .cont-slides {
     height: 80vh;
+  }
+  .skill{
+    height: 1.2rem;
+  }
+  .skill-cont em {
+    font-size: 1.5rem;
   }
 }
