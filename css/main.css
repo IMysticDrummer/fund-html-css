@@ -168,6 +168,85 @@ main{
   animation: react-complet 3s ease-in 22s 1 alternate forwards;
 }
 
+/*Formulario*/
+.form_Label{
+  display: none;
+}
+.form input{
+  color: var(--caracter);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea
+ {
+  background-color: var(--fondo_menu) !important;
+  border-color: var(--enlace_resaltado);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: inherit !important;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"]{
+  height: 2rem;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+  background-color: var(--fondo);
+  border-color: var(--enlace_visitado);
+  color: inherit;
+}
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="tel"]::placeholder,
+form textarea::placeholder {
+  color: var(--enlace_resaltado);
+  font-weight: 200;
+  font-style: italic;
+}
+
+fieldset{
+  border: 2px dotted var(--enlace_visitado);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+fieldset div{
+  margin-bottom: 10px;
+}
+fieldset input[type="radio"] {
+  appearance: none;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  background-color: black;
+  border: 1px solid var(--enlace_resaltado);
+  margin-right: 10px;
+}
+fieldset input[type="radio"]:hover,
+fieldset input[type="radio"]:checked
+ {
+  background-color: var(--enlace_resaltado);
+}
+
+form input[type="submit"] {
+  background-color: var(--enlace_resaltado);
+  color: var(--fondo_menu);
+  border-color: var(--enlace_visitado);
+  border-radius: 8px;
+}
+
+
+
+
 @media only screen and (min-width:640px) {
   /*Skills*/
   .all-skills-cont {
@@ -183,6 +262,12 @@ main{
     width: 50%;
     margin-bottom: 0;
   }
+
+  /*Form*/
+  .form_Label{
+    display: block;
+    margin-bottom: 5px;
+  }
 }
 
 @media only screen and (min-width:768px) {
@@ -195,5 +280,70 @@ main{
   }
   .skill-cont em {
     font-size: 1.5rem;
+  }
+
+  /*Form*/
+  .name-surname,
+  .mail-tel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .name-surname > .form_Label,
+  .mail-tel > .form_Label {
+    display: inline-block;
+    width: 16%;
+  }
+
+  .name-surname input[type="text"]{
+    width: 30%;
+  }
+  .name-surname #nombre{
+    margin-right: 10px;
+  }
+  .mail-tel input[type="email"]{
+    width: 60%;
+    margin-right: 10px;
+  }
+  .mail-tel input[type="tel"]{
+    width: 23%;
+  }
+  .tag{
+    display: flex;
+    align-items: baseline;
+  }
+  .tag > .form_Label{
+    width: 20%;
+  }
+  div label ~ #tag{
+    width: 45%;
+  }
+
+}
+
+@media only screen and (min-width:1024px) {
+  /*Form*/
+  form {
+    font-size: 1.2rem;
+  }
+  fieldset {
+    width: 50%;
+  }
+
+  div #tag ~ label{
+    width: 20%;
+  }
+
+  form input[type="submit"] {
+    background-color: var(--fondo_menu);
+    color: var(--enlace_resaltado);
+    border-color: var(--enlace_visitado);
+    border-radius: 8px;
+  }
+  form input[type="submit"]:hover {
+    background-color: var(--enlace_resaltado);
+    color: var(--fondo_menu);
+    border-color: var(--enlace_visitado);
   }
 }

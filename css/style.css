@@ -69,3 +69,16 @@ em {
 .padding_basico {
   padding: var(--padding_basico);
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 100px var(--fondo-menu) inset !important;
+    box-shadow: 0 0 0 100px var(--fondo-menu) inset !important;
+    color: var(--enlace_visitado);
+  }
+  
+  input:-webkit-autofill{
+    -webkit-text-fill-color: var(--enlace_visitado) !important;
+  }

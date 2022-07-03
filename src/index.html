@@ -172,24 +172,19 @@
       </section>
     </section>
 
-    <section class="contenedor1">
-      <div class="separator"></div>
-      <p>Prueba</p>
-    </section>
-
     <section id="contact">
       <div class="separator"></div>
       <h1>Formulario Contacto</h1>
       
       <form action="#" method="get">
-        <div>
+        <div class="name-surname">
           <label class="form_Label" for="nombre">Nombre *</label>
           <input type="text" name="nombre" id="nombre" required placeholder="Nombre*">
           <label class="form_Label" for="apellidos">Apellidos *</label>
           <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos*">
         </div>
 
-        <div>
+        <div class="mail-tel">
           <label class="form_Label" for="email">Email *</label>
           <input type="email" name="email" id="email" required placeholder="Email*">
           <label class="form_Label" for="telefono">Teléfono *</label>
@@ -199,32 +194,32 @@
         <fieldset>
           <legend>¿Cómo me conociste?</legend>
           <div>
-            <label for="rb_universidad">Universidad</label>
             <input type="radio" name="conocido" id="rb_universidad" value="universidad">
+            <label for="rb_universidad">Universidad</label>
           </div>
           <div>
-            <label for="rb_keepcoding">Keepcoding Kick-off</label>
             <input type="radio" name="conocido" id="rb_keepcoding" value="keepcoding">
+            <label for="rb_keepcoding">Keepcoding Kick-off</label>
           </div>
           <div>
-            <label for="rb_colegio">Colegio</label>
             <input type="radio" name="conocido" id="rb_colegio" value="colegio">
+            <label for="rb_colegio">Colegio</label>
           </div>
           <div>
-            <label for="rb_github">GitHub</label>
             <input type="radio" name="conocido" id="rb_github" value="GitHub">
+            <label for="rb_github">GitHub</label>
           </div>
         </fieldset>
         
         <!-- Otro patrón posible @[0-z]+ -->
-        <div>
+        <div class="tag">
           <label class="form_Label" for="tag">Tag de Github</label>
           <input type="text" name="tag" id="tag"
           placeholder="Tag Github. Formato @username" pattern="^@[^\s]+"
           title="ejemplo: @keepcoding">
         </div>
         
-        <div>
+        <div class="description">
           <label class="form_Label" for="descripcion">Descripción *</label>
           <textarea
             name="descripcion"
