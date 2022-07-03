@@ -62,6 +62,10 @@ h1 {
   font-weight: bolder;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 em {
   font-style: italic;
 }

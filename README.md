@@ -22,16 +22,15 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 
 > **Barra de navegación**
 >> *Links a cada sección del portfolio* --> Sí
->> *Estado hover suavizado* --> Sí
+>> *Estado hover suavizado* --> Sí para pantallas a partir de 1024px
 >> *Header con imagen de fondo que cambie según las resoluciones* --> Sí
->>> Se ha establecido una imagen de logo (no está de fondo), pero carga a diferentes
-resoluciones (menos de 600px, menos de 1024px y de 1024px en adelante)
+>>> Se ha establecido una imagen de logo (no está de fondo), pero carga a diferentes resoluciones (menos de 600px, menos de 1024px y de 1024px en adelante)
 >> *(Opcional) Menú burger en mobile* --> Sí, transformable en entorno tablet o laptop
 
 > **Elemento central**
 >> *Carrousel con nuestros trabajos* --> **Pendiente**
->> *Skills de programación* --> **Pendiente**
->>> *Barras de progreso animadas* --> Pendiente
+>> *Skills de programación* --> Si
+>>> *Barras de progreso animadas* --> Si
 >> *Formulario* --> Sí
 >>> Nombre, Apellidos, Teléfono --> Sí
 >>> Radiobutton --> Sí
@@ -46,7 +45,8 @@ resoluciones (menos de 600px, menos de 1024px y de 1024px en adelante)
 > *(Opcional) Página 404 personalizada* --> Pendiente
 > *(Opcional) Página 500 personalizada* --> Pendiente
 
-
+### PÁGINA DE PROYECTOS EN GRID
+> Pendiente
 ## WEBSITE MAP
 **Página principal** con los siguientes apartados
 > **Barra de navegación**.
