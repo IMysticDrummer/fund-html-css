@@ -2,7 +2,10 @@
 header {
   position: -webkit-sticky;
   position: sticky;
-  margin-bottom: 10px;
+  top: 0;
+  height: 22vw;
+  z-index: 100;
+  background-color: var(--fondo);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,6 +39,8 @@ header>div{
 }
 
 main{
+  position: relative;
+  margin: auto;
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
@@ -45,32 +50,52 @@ main{
     "proyect-container"
   ;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .video-enter{
+  width: 100%;
   margin-bottom: 10px;
+  overflow: hidden;
+}
+.video-enter>video{
+  width: 100%;
 }
 
 .proyect-container{
   display: grid;
   height: 100vh;
-  grid-template-columns: repeat(2, 48%);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "proyect proyect"
     "proyect proyect"
     "proyect proyect"
     "proyect proyect"
   ;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: repeat(4, 1fr);
   row-gap: 10px;
   column-gap: 10px;
   justify-content: center;
   text-align: center;
+  
 }
+.proyect{
+  padding: var(--padding_basico);
+  border: 1px solid var(--enlace_visitado);
+  overflow: scroll;
+}
+.proyect em, .proyect p{
+  display: block;
+  margin-bottom: 8px;
+}
+.proyect img{
+  margin: auto;
+  width: 90%;
+}
+
 
 @media only screen and (min-width:425px) {
   /*Header*/
+
   .header_h1 {
     font-size: 1.5rem;
   }
@@ -82,7 +107,7 @@ main{
 @media only screen and (min-width:640px) {
   /*Header*/
   header {
-    margin-bottom: 10px;
+    height: 16vw;
   }
   .header_h1 {
     font-size: 1.75rem;
@@ -93,23 +118,40 @@ main{
 
   /*Main*/
   .video-enter{
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .proyect-container{
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3,33%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
     grid-template-areas:
       "proyect proyect proyect"
       "proyect proyect proyect"
       "proyect proyect proyect"
     ;
   }
+  .proyect{
+    overflow: hidden;
+  }
 }
 
+@media only screen and (min-width:768px) {
+  header {
+    height: 10vw;
+  }
+  .video-enter{
+    width: 70%;
+  }
+}
+
+
 @media only screen and (min-width:1024px) {
+  /*Header*/
+  header {
+    height: 8vw;
+  }
   /*Main*/
   main{
     justify-content: center;
@@ -117,17 +159,24 @@ main{
     margin-right: auto;
   }
   .video-enter{
-    width: 100%;
+    width: 40%;
     height: 40vh;
   }
   .proyect-container{
-    height: 40vh;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(2,50%);
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-template-areas:
         "proyect proyect proyect proyect"
         "proyect proyect proyect proyect"
     ;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .video-enter{
+    width: 30%;
+    height: 30vh;
   }
 }
