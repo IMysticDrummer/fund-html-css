@@ -11,9 +11,6 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 > He arriesgado haciendo una web con colores complejos, derivados del logo elegido, un fénix.
 > La paleta de colores, a partir del logo, la he obtenido de la web [coolors](https://coolors.co/).  
 
-**Para lanzar la web de práctica, pincha [aqui](./src/index.html)**
-
-
 ## REQUISITOS DE LA PRÁCTICA
 > **Mobile First**
 >> *Web diseñada primero para pantalla móvil* --> Sí.  
@@ -53,8 +50,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 >> *Links a redes sociales, con noopenner y noreferrer* --> Sí.
 
 > *(Opcional) Despliege en Github Pages* --> Si.  
->> Como el archivo index.html está en el directorio `/src`, he tenido que generar un enlace
-desde este mismo archivo, arriba y [aqui](./src/index.html).
+
 > *(Opcional) Página 404 personalizada* --> Realizada.
 >> Creado un enlace en la barra de navegación para probarla.  
 
