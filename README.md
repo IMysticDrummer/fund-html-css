@@ -22,7 +22,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 
 > **Barra de navegación**
 >> *Links a cada sección del portfolio* --> Sí
->> *Estado hover suavizado* --> Sí para pantallas a partir de 1024px
+>> *Estado hover suavizado con transición* --> Sí para pantallas a partir de 1024px
 >> *Header con imagen de fondo que cambie según las resoluciones* --> Sí
 >>> Se ha establecido una imagen de logo (no está de fondo), pero carga a diferentes resoluciones (menos de 600px, menos de 1024px y de 1024px en adelante)
 >> *(Opcional) Menú burger en mobile* --> Sí, transformable en entorno tablet o laptop

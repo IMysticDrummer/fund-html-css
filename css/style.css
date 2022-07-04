@@ -17,6 +17,8 @@
 
   font-family: 'Nunito', sans-serif;
 
+  scroll-behavior: smooth;
+
   /*Variables principales*/
   --padding_basico: 8px;
 
@@ -29,6 +31,8 @@
     --altura_menu_min: 30px;
     --altura_menu_max: 40px;
     --altura_logo: 4rem; /*6em*/
+
+
     
 }
 
@@ -52,10 +56,6 @@ a {
 
 a:visited {
   color: var(--enlace_visitado);
-}
-
-a:hover {
-  color: var(--enlace_resaltado);
 }
 
 h1 {

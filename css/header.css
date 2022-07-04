@@ -231,4 +231,11 @@ header{
     .titulo em{
       font-size: 1.8rem;
     }
+
+    a{
+      transition: color 0.3s linear;
+    }
+    a:hover {
+     color: var(--enlace_resaltado);
+    }
   }
