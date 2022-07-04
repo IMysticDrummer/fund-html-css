@@ -1,0 +1,58 @@
+header{
+  width: 100%;
+  height: 10vw;
+  padding: var(--padding_basico);
+  color: var(--enlace);
+  margin-bottom: 10px;
+}
+header a{
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+body{
+  background-color: var(--fondo);
+  background-image: url("../img/logo_542x640.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  max-width: 1024px;
+  margin: auto;
+}
+
+main h1{
+  font-weight: 900;
+  font-size: xxx-large;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px var(--enlace_visitado);
+  display: inline-block;
+}
+main h1:nth-child(1){
+  transform: rotate(-30deg);
+}
+main h1:nth-child(2){
+  transform: rotate(-10deg);
+}
+main h1:nth-child(3){
+  transform: rotate(20deg);
+}
+
+main h2{
+  font-size: 2.5rem;
+  color: var(--fondo_menu);
+  text-shadow: 4px 2px 4px var(--enlace_resaltado);
+}
+
+main p{
+  background-color: var(--fondo_menu);
+  font-size: 1.5rem;
+}

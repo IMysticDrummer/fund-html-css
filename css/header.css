@@ -2,7 +2,6 @@ header{
   position:-webkit-sticky;
   position: sticky;
   top: 0;
-  /*width: var(--anchura_header);*/
   min-width: var(--anchura_min_header);
   height: var(--altura_header);
   min-height: var(--altura_min_header);

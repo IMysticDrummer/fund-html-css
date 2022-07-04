@@ -1,13 +1,4 @@
 :root{
-  /*Paleta*/
-  --dark-sienna: #2c0400ff;
-  --xiketic: #1e0200ff;
-  --orange-yellow: #f6bb24ff;
-  --windsor-tan: #b35b0bff;
-  --black: #020000ff;
-  --rosso-corsa: #c72805ff;
-  --selective-yellow: #f5b207ff;
-
   --fondo: #020000ff;
   --fondo_menu: #2c0400ff;
   --caracter: #f6bb24ff;
@@ -23,17 +14,14 @@
   --padding_basico: 8px;
 
     /*Header*/
-    --altura_header: 25vw; /*5rem;*/
+    --altura_header: 25vw;
     --altura_min_header: 76px;
     --anchura_header: 100vw;
     --anchura_min_header: 306px;
-    --altura_menu: 10vw; /*2rem 3em*/
+    --altura_menu: 10vw;
     --altura_menu_min: 30px;
     --altura_menu_max: 40px;
-    --altura_logo: 4rem; /*6em*/
-
-
-    
+    --altura_logo: 4rem;
 }
 
 * {
@@ -78,11 +66,11 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 100px var(--fondo-menu) inset !important;
-    box-shadow: 0 0 0 100px var(--fondo-menu) inset !important;
-    color: var(--enlace_visitado);
-  }
+  -webkit-box-shadow: 0 0 0 100px var(--fondo-menu) inset !important;
+  box-shadow: 0 0 0 100px var(--fondo-menu) inset !important;
+  color: var(--enlace_visitado);
+}
   
-  input:-webkit-autofill{
-    -webkit-text-fill-color: var(--enlace_visitado) !important;
-  }
+input:-webkit-autofill{
+  -webkit-text-fill-color: var(--enlace_visitado) !important;
+}
