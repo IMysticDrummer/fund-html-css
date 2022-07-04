@@ -360,6 +360,7 @@ form input[type="submit"] {
     color: var(--enlace_resaltado);
     border-color: var(--enlace_visitado);
     border-radius: 8px;
+    transition: background-color 0.3s linear, color 0.3s linear, border-color 0.3s linear;
   }
   form input[type="submit"]:hover {
     background-color: var(--enlace_resaltado);
