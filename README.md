@@ -9,9 +9,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 
 ### Notas previas
 > He arriesgado haciendo una web con colores complejos, derivados del logo elegido, un fénix.  
-
 > La paleta de colores, a partir del logo, la he obtenido de la web [coolors](https://coolors.co/).  
-
 > La página personalizada error 500 se obtiene cuando se envía el formulario.  
 
 # UTILIZACIÓN DE LA WEB
@@ -20,13 +18,13 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 
 - Opción 2:
 > Clonar el repositorio. Después arrancar el archivo index.html en un navegador  
-
 > `git clone https://github.com/IMysticDrummer/fund-html-css.git`.  
 
 ## REQUISITOS DE LA PRÁCTICA
 > **Mobile First**
 >> *Web diseñada primero para pantalla móvil* --> Sí.  
 >> *Web adaptada para pantallas intermedias* --> Sí.  
+
 > **Una o varias hojas de estilos** --> Sí:
 >> Hoja de estilos para resetear CSS.  
 >> Hoja de estilos para normalizar CSS en distintos navegadores.  
@@ -39,7 +37,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 > **Barra de navegación**
 >> *Links a cada sección del portfolio* --> Sí.  
 >> *Estado hover suavizado con transición* --> Sí para pantallas a partir de 1024px.  
->> *Header con imagen de fondo que cambie según las resoluciones* --> Sí.  
+>> *Header con imagen de fondo que cambie según las resoluciones* --> Sí.
 >>> Se ha establecido una imagen de logo (no está de fondo), pero carga a diferentes resoluciones (menos de 600px, menos de 1024px y de 1024px en adelante).  
 
 >> *(Opcional) Menú burger en mobile* --> Sí, transformable en entorno tablet o laptop.  
@@ -58,12 +56,13 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 >> *Skills de programación* --> Si.  
 >>> *Barras de progreso animadas* --> Si.  
 >>> Para un mejor efecto, se van rellenando de manera secuencial.  
->> *Formulario* --> Sí.  
+
+>> *Formulario* --> Sí.
 >>> Nombre, Apellidos, Teléfono --> Sí.  
 >>> Radiobutton --> Sí.  
 >>> Tag de github con el pattern según regex --> Sí.  
 >>> Descripción con textarea --> Sí.  
->>> Botón de guardado --> Sí (método post)  
+>>> Botón de guardado --> Sí (método get)  
 >>>> Enviar el formulario lleva a la página de error 500 personalizada.  
 
 > **Footer**
@@ -81,6 +80,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 > *Despliege en Github Pages* --> Si.  
 > *Página 404 personalizada* --> Si:  
 >> Creado un enlace en la barra de navegación para probarla.  
+
 > *Página 500 personalizada* --> Realizado.  
 >> Para probarla, rellena el formulario y envíalo.  
 >> Te llevará a la página de error del sevidor.  
@@ -105,11 +105,14 @@ Secciones:
 >> Incluye logo, nombre, nick y navbar.  
 >> La navbar tiene formato hamburguesa desplegable para pantallas pequeñas.  
 >> La navbar se despiega entera para pantallas a partir de 768px.  
->> La navbar contiene un enlace a la página 404 para su prueba.
+>> La navbar contiene un enlace a la página 404 para su prueba.  
+
 > **Caorusel Proyectos importantes**.  
 >> Deplazable a través de los puntos en la parte inferior.    
+
 > **SKills** con animación en serie.  
-> **Contacto**:  
+
+> **Contacto**:
 >> Fomulario con campos requeridos y con validaciones. Contiene:
 >>> Nombre, Apellidos, Teléfono y Descripción, como campos requeridos.  
 >>> Radiobutton de selección sobre como conociste al autor del portfolio.
@@ -117,6 +120,7 @@ Secciones:
 >>> Botón de submit. Este botón tiene estado hover suavizado para pantallas
 >>> de 1024px o más.  
 >>> El envío del formulario lleva a la página de error 500 (server error).  
+
 > **Footer** con los enlaces a las redes sociales.  
 
 **works.html**  
@@ -126,6 +130,5 @@ Secciones:
 # RECURSOS UTILIZADOS
 **Deposit photos** --> Obtención del logo del fénix.  
 **Web [Coolors](https://coolors.co/)** --> obtención de la paleta de colores a partir del logo (*fénix*).  
-
 **Recursos de internet varios** para la obtención de los logos de redes sociales en png.
 
