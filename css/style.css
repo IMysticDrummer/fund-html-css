@@ -8,8 +8,6 @@
 
   font-family: 'Nunito', sans-serif;
 
-  scroll-behavior: smooth;
-
   /*Variables principales*/
   --padding_basico: 8px;
 
@@ -22,6 +20,7 @@
     --altura_menu_min: 30px;
     --altura_menu_max: 40px;
     --altura_logo: 4rem;
+
 }
 
 * {
