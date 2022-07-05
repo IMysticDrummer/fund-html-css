@@ -230,8 +230,12 @@ header{
     .titulo em{
       font-size: 1.8rem;
     }
+    .menu a{
+      font-size: 2rem;
+    }
 
     a{
+      font-size: 2rem;
       transition: color 0.3s linear;
     }
     a:hover {

@@ -38,7 +38,6 @@ main>section{
   border-radius: 20px;
 }
 .slide em {
-  /*padding-top: var(--altura_header);*/
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
@@ -300,6 +299,7 @@ form input[type="submit"] {
     width: 20px;
   }
 
+
   /*Skilss*/
   .skill{
     height: 1.2rem;
@@ -352,6 +352,9 @@ form input[type="submit"] {
   /*Carousel*/
   .cont-carousel{
     height: 70vh;
+  }
+  .slide em, .slide p{
+    font-size: 1.5rem;
   }
   
   /*Form*/
