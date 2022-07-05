@@ -14,7 +14,7 @@ Soy un experimentado programador *web full stack*, preparado para hacer frente a
 
 # UTILIZACIÓN DE LA WEB
 - Opción 1:
-> Lanzar la web desde la dirección [imysticdrummer.github.io/fund-html-css/](imysticdrummer.github.io/fund-html-css/).  
+> Lanzar la web desde la dirección [https://imysticdrummer.github.io/fund-html-css/](https://imysticdrummer.github.io/fund-html-css/).  
 
 - Opción 2:
 > Clonar el repositorio. Después arrancar el archivo index.html en un navegador  
