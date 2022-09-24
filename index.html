@@ -7,49 +7,63 @@
 
   <title>IMysticDrummer Portfolio</title>
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/footer.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,200;1,400&display=swap"
   rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body>
-
-  <header>
-    <aside class="menu max-dimensions-menu min-dimensions-menu">
-      <input class="max-dimensions-menu min-dimensions-menu" type="checkbox" name="" id="">
-      <img class="max-dimensions-menu min-dimensions-menu" src="./img/menu-hamburger.png" alt="">
-      <nav>
-        <ul class="enlace_nav">
-          <li><a href="#proyects">Proyectos</a></li>
-          <li></div><a href="#skills">Skills</a></li>
-          <li></div><a href="#contact">Contact</a></li>
-          <li></div><a href="./src/works.html">Works</a></li>
-          <li></div><a href="./src/404.html">404</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <div class="img_logo">
-      <picture>
-        <source media="(min-width: 1024px)" srcset="./img/logo_868x1024.jpg">
-        <source media="(min-width: 768px)" srcset="./img/logo_745x880.jpg">
-        <source media="(min-width: 640px)" srcset="./img/logo_542x640.jpg">
-        <img src="./img/logo_68x80.jpg" alt="Imagen Fénix">
-      </picture>
-    </div>
-
-    <div class="titulo">
-      <h1 class="header_h1">Iván García Rodríguez - IMysticDrummer</h1>
-      <em>Programador Web Full Stack</em>
-    </div>
+<body>  
+  <header class="container-fluid bg-black text-light d-flex justify-content-evenly align-items-baseline flex-wrap">
+    <picture>
+      <source media="(min-width: 1024px)" srcset="./img/logo_868x1024.jpg">
+      <source media="(min-width: 768px)" srcset="./img/logo_745x880.jpg">
+      <source media="(min-width: 640px)" srcset="./img/logo_542x640.jpg">
+      <img src="./img/logo_68x80.jpg" alt="Imagen Fénix" class="">
+    </picture>
+    
+    <h1>IMysticDrummer</h1>
+    <h2>Full Stack Web Developer</h2>
+    <em>Iván García Rodríguez</em>
   </header>
+  
+  <nav class="navbar navbar-expand-lg sticky-top bg-light">
+    <aside class="container-fluid">
+      
+      <em>Iván García</em>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="item" href="#proyects">Proyects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="item" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="item" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./src/works.html">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./src/404.html">404</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </nav>
+
+  <!-- OLD-->
 
   <main>
     <section id="proyects">
@@ -231,5 +245,8 @@
       </ul>
     </aside>
   </footer>
+
+  <script src="./javascript/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="./javascript/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
